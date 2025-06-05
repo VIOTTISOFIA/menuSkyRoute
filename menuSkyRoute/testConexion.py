@@ -1,5 +1,5 @@
 # test_conexion.py
-from conexion_base_datos import conectar, cerrar_conexion
+from menuSkyRoute.conexion_base_datos import conectar, cerrar_conexion
 
 # 1. Conectar a la base de datos
 conexion = conectar()
