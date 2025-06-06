@@ -1,3 +1,13 @@
+import sys
+import os
+
+# Agrega el directorio raíz del proyecto al path de búsqueda
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from menuSkyRoute.conexion_base_datos import conectar, cerrar_conexion
+
+
+
 # test_conexion.py
 from menuSkyRoute.conexion_base_datos import conectar, cerrar_conexion
 
