@@ -1,11 +1,14 @@
 import mysql.connector
-from menuSkyRoute.conexion_base_datos import conectar, cerrar_conexion
+#from menuSkyRoute.conexion_base_datos import conectar, cerrar_conexion
+from conexion_base_datos import conectar, cerrar_conexion
 
-# Lista temporal de clientes (si necesitás manipular en memoria)
-clientes_temporales = []
 
 # Agregar un nuevo cliente
-def agregar_cliente(razon_social, cuit, correo):
+def agregar_cliente():
+    razon_social = input("Ingrese la razón social: ")
+    cuit = input("Ingrese el CUIT: ")
+    correo = input("Ingrese el correo: ")
+    
     conexion = conectar()
     cursor = conexion.cursor()
     query = "INSERT INTO cliente (Razon_Social, CUIT, Correo) VALUES (%s, %s, %s)"
@@ -13,7 +16,7 @@ def agregar_cliente(razon_social, cuit, correo):
     cursor.execute(query, valores)
     conexion.commit()
     cerrar_conexion(conexion)
-    print("✅ Cliente agregado con éxito.")
+    print("Cliente agregado con éxito.")
 
 # Listar todos los clientes registrados
 def listar_clientes():
@@ -23,14 +26,16 @@ def listar_clientes():
     resultados = cursor.fetchall()
     cerrar_conexion(conexion)
 
-    # Iterar sobre los resultados correctamente
     for cliente in resultados:
-        print(f"🆔 {cliente['ID_Cliente']} | 🏢 {cliente['Razon_Social']} | 💼 CUIT: {cliente['CUIT']} | ✉️ {cliente['Correo']}")
-
-    return resultados  # Esto estaba mal posicionado antes
+        print(f"{cliente['ID_Cliente']} | {cliente['Razon_Social']} | CUIT: {cliente['CUIT']} | {cliente['Correo']}")
 
 # Modificar datos de un cliente por ID
-def modificar_cliente(id_cliente, nueva_razon, nuevo_cuit, nuevo_correo):
+def modificar_cliente():
+    id_cliente = input("Ingrese el ID del cliente a modificar: ")
+    nueva_razon = input("Nueva razón social: ")
+    nuevo_cuit = input("Nuevo CUIT: ")
+    nuevo_correo = input("Nuevo correo: ")
+
     conexion = conectar()
     cursor = conexion.cursor()
     query = """
@@ -42,13 +47,46 @@ def modificar_cliente(id_cliente, nueva_razon, nuevo_cuit, nuevo_correo):
     cursor.execute(query, valores)
     conexion.commit()
     cerrar_conexion(conexion)
-    print("✏️ Cliente actualizado correctamente.")
+    print("Cliente actualizado correctamente.")
 
 # Eliminar un cliente por ID
-def eliminar_cliente(id_cliente):
+def eliminar_cliente():
+    id_cliente = input("Ingrese el ID del cliente a eliminar: ")
+
     conexion = conectar()
     cursor = conexion.cursor()
     cursor.execute("DELETE FROM cliente WHERE ID_Cliente = %s", (id_cliente,))
     conexion.commit()
     cerrar_conexion(conexion)
-    print("🗑️ Cliente eliminado.")
+    print("Cliente eliminado.")
+
+# Menú interactivo
+def menu():
+    while True:
+        print("\n--- Menú de Gestión de Clientes ---")
+        print("1. Agregar Cliente")
+        print("2. Listar Clientes")
+        print("3. Modificar Cliente")
+        print("4. Eliminar Cliente")
+        print("5. Salir")
+        
+        opcion = input("Seleccione una opción: ")
+
+        if opcion == "1":
+            agregar_cliente()
+        elif opcion == "2":
+            listar_clientes()
+        elif opcion == "3":
+            modificar_cliente()
+        elif opcion == "4":
+            eliminar_cliente()
+        elif opcion == "5":
+            print("Saliendo del programa...")
+            break
+        else:
+            print("Opción no válida, intente nuevamente.")
+
+# Ejecutar el menú
+if __name__ == "__main__":
+    menu()
+

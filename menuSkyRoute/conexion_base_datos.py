@@ -1,6 +1,8 @@
 # conexion_base_datos.py
 import mysql.connector
-from menuSkyRoute.config import DB_CONFIG
+#from menuSkyRoute.config import DB_CONFIG
+from config import DB_CONFIG
+
 
 
 def conectar():
