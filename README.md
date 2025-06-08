@@ -53,12 +53,35 @@ de prueba. Archivo baseDatos.sql
 
 ## Documentacion adicional
 
-Se adjunta dos ducmentos:
+Se adjunta dos ducumentos en la carpeta Etica y deontologia
 -Etica y ejercicio profecional Evidencia 2
 -Etica y ejercicio profecional Evidencai 3
 
 Se ha tenido en cuenta la legislación de derechos de autor sobre software, asegurando que este código es para fines demostrativos y educativos, 
 respetando las licencias aplicables si se integrara con otros componentes.
+
+En la carpeta Base de datos:
+
+* Archivo contiene el Diagrama de Entidad-Relación (DER) de la base de datos de SkyRoute. El DER es una representación visual de la estructura de la base de datos, mostrando:
+
+Las entidades principales (ej., Cliente, Destino, Venta, Estado_Venta).
+Los atributos de cada entidad (ej., Razon_Social, Costo_base, Fecha_venta).
+Las relaciones entre las entidades (ej., un cliente puede tener muchas ventas, una venta tiene un destino).
+Las claves primarias y foráneas que definen estas relaciones y aseguran la integridad referencial.
+
+
+*Archivo SQL que ejemplifica el uso de:
+
+ DDL: Contiene las sentencias SQL necesarias para crear la estructura de la base de datos, incluyendo:
+CREATE DATABASE: Para crear la base de datos skyroute.
+CREATE TABLE: Para definir la estructura de cada tabla (cliente, destino, venta, estado_venta), sus columnas, tipos de datos, restricciones (NOT NULL, UNIQUE) y la definición de claves primarias y foráneas.
+
+
+DML: Incluye sentencias SQL para interactuar con los datos dentro de las tablas existentes, como:
+INSERT INTO: Para añadir registros de ejemplo en las tablas (clientes, destinos, estados de venta y ventas).
+SELECT: Para consultar y recuperar datos de las tablas.
+UPDATE: Para modificar registros existentes.
+DELETE: Para eliminar registros de las tablas.
 
 En cuanto a la seguridad y datos del cliente, este sistema maneja información sensible como la razón social, CUIT y correo electrónico.
 Se recomienda implementar medidas de seguridad adicionales en un entorno de producción, tales como:
@@ -67,4 +90,4 @@ Validación de entradas: Para prevenir inyecciones SQL y otros ataques.
 Manejo de errores: Implementar bloques try-except para gestionar excepciones de la base de datos y otras operaciones.
 Auditoría y logs: Registrar las operaciones importantes para fines de seguridad y seguimiento.
 Autenticación y autorización: Los usuarios deberían autenticarse y tener permisos específicos para acceder a ciertas funcionalidades.
-Cifrado de datos: Especialmente para datos sensibles almacenados o transmitidos.
+
