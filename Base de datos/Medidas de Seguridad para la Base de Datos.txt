@@ -1,0 +1,14 @@
+## Medidas de Seguridad para la Base de Datos
+
+* Crear usuarios de MySQL con permisos específicos para cada funcionalidad o parte de la aplicación
+(ej., un usuario para solo lectura, otro para lectura/escritura/modificación de ventas, otro para administración).
+Limitar los privilegios de cada usuario al mínimo necesario para su tarea.
+
+* Almacenar las contraseñas de la base de datos en variables de entorno o archivos de configuración externos seguros, no directamente en el código fuente.
+
+* Utilizar siempre consultas parametrizadas (ej., con %s en mysql.connector) para prevenir ataques de inyección SQL.
+Cifrado de la Conexión (SSL/TLS):
+
+* Validar y limpiar rigurosamente todos los datos provenientes del usuario antes de procesarlos o almacenarlos.
+
+* Evitar mostrar mensajes de error detallados de la base de datos a los usuarios finales; registrar los errores internamente y mostrar mensajes genéricos.
