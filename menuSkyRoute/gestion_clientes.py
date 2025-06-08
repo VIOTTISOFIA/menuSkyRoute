@@ -1,3 +1,17 @@
+"""
+Modulo: Gestión de Clientes
+Sistema de gestion de clientes, con conexion MySQL que
+permite operaciones CRUD sobre la tabla.
+
+Funciones:
+agregar_cliente(): Solicita al usuario la razón social, CUIT y correo electrónico para añadir un nuevo cliente a la base de datos.
+listar_clientes(): Muestra todos los clientes registrados en la base de datos, incluyendo su ID, razón social, CUIT y correo.
+modificar_cliente(): Permite actualizar la información de un cliente existente buscando por su ID.
+eliminar_cliente(): Elimina un cliente de la base de datos utilizando su ID.
+menu(): Proporciona una interfaz interactiva basada en consola.
+"""
+
+
 import mysql.connector
 #from menuSkyRoute.conexion_base_datos import conectar, cerrar_conexion
 from conexion_base_datos import conectar, cerrar_conexion
