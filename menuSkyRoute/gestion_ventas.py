@@ -43,7 +43,7 @@ def listar_ventas():
     cursor = conexion.cursor(dictionary=True)
     cursor.execute("""
         SELECT v.ID_Venta, v.ID_Cliente, v.ID_Destino, v.Fecha_venta, 
-               v.Costo_total, e.Tipo_estado, v.Fecha_anulacion 
+            v.Costo_total, e.Tipo_estado, v.Fecha_anulacion 
         FROM venta v 
         INNER JOIN estado_venta e ON v.ID_Estado_Venta = e.ID_Estado_Venta
     """)
@@ -54,8 +54,8 @@ def listar_ventas():
         estado = venta['Tipo_estado']
         fecha_anulacion = venta.get('Fecha_anulacion', 'N/A')
         print(f"{venta['ID_Venta']} | Cliente: {venta['ID_Cliente']} | Destino: {venta['ID_Destino']} | "
-              f"Fecha: {venta['Fecha_venta']} | {venta['Costo_total']} | Estado: {estado} | "
-              f"Fecha de anulación: {fecha_anulacion}")
+            f"Fecha: {venta['Fecha_venta']} | {venta['Costo_total']} | Estado: {estado} | "
+            f"Fecha de anulación: {fecha_anulacion}")
 
 # Modificar estado de venta
 def modificar_estado_venta():
