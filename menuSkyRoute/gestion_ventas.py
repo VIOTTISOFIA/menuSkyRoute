@@ -1,3 +1,18 @@
+"""
+modulo: Gestión de Ventas
+
+Funciones para gestionar las ventas de SkyRoute, 
+interaccion con la base de datos que permite registar, listar y modificar su estado.
+Incluye boton de arrepentiemiento.
+
+Funciones
+registrar_venta(): Permite registrar una nueva venta asociándola a un cliente y un destino, ingresando la fecha y el costo total. 
+listar_ventas(): Muestra un listado detallado de todas las ventas registradas y datos asociados.
+modificar_estado_venta(): Permite cambiar el estado de una venta existente (a Confirmada, Pendiente o Cancelada) utilizando su ID. 
+anular_venta_reciente(): Esta función actúa como un "botón de arrepentimiento"
+menu(): Proporciona una interfaz de consola interactiva para que el usuario pueda elegir entre las diferentes operaciones de gestión de ventas.
+"""
+
 import mysql.connector
 from datetime import datetime
 from conexion_base_datos import conectar, cerrar_conexion
