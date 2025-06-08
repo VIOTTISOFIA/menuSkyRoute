@@ -1,3 +1,17 @@
+"""
+Modulo: Gestión de Destinos
+
+Funciones uqe permiten operar sobre los destinos de SkyRoute,
+interctuando con la BD de MySQL y realizar operaciones CRUD sobre la misma
+
+Funciones:
+agregar_destino(): Permite registrar un nuevo destino solicitando la ciudad, el país y el costo base al usuario.
+listar_destinos(): Muestra un listado completo de todos los destinos disponibles en la base de datos, incluyendo su ID, ciudad, país y costo base.
+modificar_destino(): Facilita la actualización de los datos de un destino existente mediante su ID.
+eliminar_destino(): Permite eliminar un destino de la base de datos especificando su ID.
+menu(): Ofrece una interfaz de consola interactiva para que el usuario pueda seleccionar y ejecutar las distintas operaciones de gestión de destinos.
+"""
+
 import mysql.connector
 #from menuSkyRoute.conexion_base_datos import conectar, cerrar_conexion
 from conexion_base_datos import conectar, cerrar_conexion
