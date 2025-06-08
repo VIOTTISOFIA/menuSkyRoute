@@ -1,10 +1,11 @@
 # conexion_base_datos.py
 import mysql.connector
-#from menuSkyRoute.config import DB_CONFIG
+
+#Importa configuracion
 from config import DB_CONFIG
 
 
-
+# Funcion para conectar y cerrar conexion a la DB.
 def conectar():
     try:
         conexion = mysql.connector.connect(**DB_CONFIG)
