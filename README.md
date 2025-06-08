@@ -40,6 +40,7 @@ gestion_clientes.py: Contiene las funciones para realizar operaciones CRUD sobre
 gestion_destinos.py: Contiene las funciones para realizar operaciones CRUD sobre la tabla de destinos en la base de datos.
 gestion_ventas.py: Contiene las funciones para registrar, listar y modificar el estado de las ventas, incluyendo la lógica para el "botón de arrepentimiento".
 conexion_base_datos.py: Módulo que encapsula las funciones para establecer (conectar()) y cerrar (cerrar_conexion()) la conexión con la base de datos MySQL.
+Gestion de Codigo y Control de Versiones. Para facilitar la colaboracion y el seguimiento de cambio, el proyecto se gestiona utilizando Git y GitHub. Esto permite: Trabajo colaborativo. Historial y Reversion de cambios: En caso de errores, es posible volver a versiones anteriores del codigo.
 
 ## Requisitos
 
