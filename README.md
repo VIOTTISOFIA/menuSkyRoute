@@ -4,6 +4,13 @@ Este proyecto implementa un sistema básico de gestión para una agencia de pasa
 facilitando la administración de clientes, destinos y ventas. 
 Está diseñado para interactuar con una base de datos MySQL y proporciona una interfaz de consola.
 
+Además del presente archivo README, se van a encontrar con las carpetas:
+
+- Manu SkyRoute: Código python de gestión de ventas y clientes.
+- ABP: Documentación, video y póster del mismo.
+- Base de datos: Esquema DER y código sql
+- Etica y deontologia: Documentación para orientar la práctica de desarrollo de software y base de datos en su marco ético y legal.
+
 ## Características
 
 El sistema opera modularmente, cada modulo con su funcionalida especifica,
