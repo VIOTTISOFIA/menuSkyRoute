@@ -51,16 +51,16 @@ Puedes instalarla desde la terminal: pip install mysql-connector-python
 Acceso a la Base de datos de SkyRoute o al codigo para crearla. Se encuentra un archivo para tal caso a modo
 de prueba. Archivo baseDatos.sql
 
-## Documentacion adicional
+### Documentacion adicional
 
-Se adjunta dos ducumentos en la carpeta Etica y deontologia
+## Se adjunta dos ducumentos en la carpeta Etica y deontologia
 -Etica y ejercicio profecional Evidencia 2
 -Etica y ejercicio profecional Evidencai 3
 
 Se ha tenido en cuenta la legislación de derechos de autor sobre software, asegurando que este código es para fines demostrativos y educativos, 
 respetando las licencias aplicables si se integrara con otros componentes.
 
-En la carpeta Base de datos:
+## En la carpeta Base de datos:
 
 * Archivo contiene el Diagrama de Entidad-Relación (DER) de la base de datos de SkyRoute. El DER es una representación visual de la estructura de la base de datos, mostrando:
 
@@ -91,3 +91,8 @@ Manejo de errores: Implementar bloques try-except para gestionar excepciones de 
 Auditoría y logs: Registrar las operaciones importantes para fines de seguridad y seguimiento.
 Autenticación y autorización: Los usuarios deberían autenticarse y tener permisos específicos para acceder a ciertas funcionalidades.
 
+## Carpeta ABP
+
+- Documento de presentación del ANP
+- Video de presentación del equipo de trabajo.
+- Póster del proyecto
