@@ -100,6 +100,6 @@ Autenticación y autorización: Los usuarios deberían autenticarse y tener perm
 
 ## Carpeta ABP
 
-- Documento de presentación del ANP
+- Documento de presentación del ABP
 - Video de presentación del equipo de trabajo.
 - Póster del proyecto
