@@ -1,3 +1,7 @@
+-- Crear base de datos evidencia3
+CREATE DATABASE IF NOT EXISTS evidencia3;
+USE evidencia3;
+
 -- Tabla Cliente
 CREATE TABLE Cliente (
     ID_Cliente INT AUTO_INCREMENT PRIMARY KEY,
@@ -126,3 +130,11 @@ JOIN
     Destino d ON v.ID_Destino = d.ID_Destino
 GROUP BY 
     d.Pais;
+
+
+SELECT c.ID_Cliente, c.Razon_Social, COUNT(v.ID_Venta) AS Cantidad_Ventas
+FROM Cliente c
+JOIN Venta v ON c.ID_Cliente = v.ID_Cliente
+GROUP BY c.ID_Cliente, c.Razon_Social
+ORDER BY Cantidad_Ventas DESC
+LIMIT 1;    
