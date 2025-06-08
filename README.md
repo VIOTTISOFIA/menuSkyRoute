@@ -62,7 +62,7 @@ de prueba. Archivo baseDatos.sql
 
 ## Se adjunta dos ducumentos en la carpeta Etica y deontologia
 -Etica y ejercicio profecional Evidencia 2
--Etica y ejercicio profecional Evidencai 3
+-Etica y ejercicio profecional Evidencia 3
 
 Se ha tenido en cuenta la legislación de derechos de autor sobre software, asegurando que este código es para fines demostrativos y educativos, 
 respetando las licencias aplicables si se integrara con otros componentes.
