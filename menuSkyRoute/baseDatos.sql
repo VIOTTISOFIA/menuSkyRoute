@@ -94,7 +94,7 @@ VALUES
 (5, 5, '2025-04-10', 1280.00, 1, NULL),
 (5, 2, '2025-05-18', 1120.00, 2, NULL);
 
--- para obtener la ultima venta de cada cliente tenemos que usar funCiones combinadas MAX(fecha_venta) y GROUP BY uno tabla cliente y venta. Luego agrupo por cliente y razon social.
+-- para obtener la ultima venta de cada cliente tenemos que usar funciones combinadas MAX(fecha_venta) y GROUP BY uno tabla cliente y venta. Luego agrupo por cliente y razon social.
 
 SELECT 
     c.ID_Cliente,
