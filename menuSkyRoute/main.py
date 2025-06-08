@@ -1,3 +1,10 @@
+"""
+Sistema de Gestión de Pasajes
+Este script main.py es el punto de entrada principal para el sistema de gestión de pasajes SkyRoute. 
+Centraliza las operaciones de gestión de clientes, destinos y ventas, 
+permitiendo al usuario navegar entre las diferentes funcionalidades del sistema.
+"""
+
 # main.py
 
 import gestion_clientes
