@@ -1,4 +1,4 @@
-## Referencias Bibliográficas: Marco Legal del desarrollo de sofware y el tratamiento de datos.
+## Referencias Bibliográficas: Marco Legal del desarrollo de software y el tratamiento de datos.
 
 -  Ley Provincial N°7642/87 - Consejo Profesional de Ciencias Informáticas de la Provincia de Córdoba (CPCI)
 - Estatuto del Consejo Profesional de Ciencias Informáticas de la Provincia de Córdoba (CPCI)
