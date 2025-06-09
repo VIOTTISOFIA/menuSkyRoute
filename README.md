@@ -1,4 +1,4 @@
-### SkyRoute - Sistema de Gestión de Pasajes
+# SkyRoute - Sistema de Gestión de Pasajes
 
 Este proyecto implementa un sistema básico de gestión para una agencia de pasajes de avion, 
 facilitando la administración de clientes, destinos y ventas. 
@@ -16,21 +16,21 @@ Además del presente archivo README, se van a encontrar con las carpetas:
 El sistema opera modularmente, cada modulo con su funcionalida especifica,
 permitiendo su modifiacion y reutilizacion.
 
-## Gestión de Clientes
+### Gestión de Clientes
 
  - Agregar Cliente: Permite registrar nuevos clientes con su razón social, CUIT y correo electrónico.
  - Listar Clientes: Muestra un listado completo de todos los clientes registrados.
  - Modificar Cliente: Facilita la actualización de la información de un cliente existente.
  - Eliminar Cliente: Permite dar de baja a un cliente del sistema.
    
-## Gestión de Destinos
+### Gestión de Destinos
 
  - Agregar Destino: Permite registrar nuevos destinos con su ciudad, país y costo base.
  - Listar Destinos: Muestra un listado de todos los destinos disponibles.
  - Modificar Destino: Facilita la actualización de la información de un destino.
  - Eliminar Destino: Permite eliminar un destino del sistema.
    
-## Gestión de Ventas
+### Gestión de Ventas
 
  - Registrar Venta: Permite registrar una nueva venta. Las ventas se registran inicialmente como "Pendientes".
  - Listar Ventas: Muestra un listado detallado de todas las ventas, incluyendo su estado y, si aplica, la fecha de anulación.
@@ -38,7 +38,7 @@ permitiendo su modifiacion y reutilizacion.
  - Botón de Arrepentimiento: Una funcionalidad específica para anular la venta "Pendiente" más reciente, registrando la fecha de anulación automáticamente.
 
 
-### Estructura del Proyecto
+## Estructura del Proyecto
 
 El proyecto está organizado en los siguientes archivos:
 
@@ -58,16 +58,16 @@ Puedes instalarla desde la terminal: pip install mysql-connector-python
 Acceso a la Base de datos de SkyRoute o al codigo para crearla. Se encuentra un archivo para tal caso a modo
 de prueba. Archivo baseDatos.sql
 
-### Documentacion adicional
+## Documentacion adicional
 
-## Se adjunta dos ducumentos en la carpeta Etica y deontologia
+### Se adjunta dos ducumentos en la carpeta Etica y deontologia
 -Etica y ejercicio profecional Evidencia 2
 -Etica y ejercicio profecional Evidencia 3
 
 Se ha tenido en cuenta la legislación de derechos de autor sobre software, asegurando que este código es para fines demostrativos y educativos, 
 respetando las licencias aplicables si se integrara con otros componentes.
 
-## En la carpeta Base de datos:
+### En la carpeta Base de datos:
 
 * Archivo contiene el Diagrama de Entidad-Relación (DER) de la base de datos de SkyRoute. El DER es una representación visual de la estructura de la base de datos, mostrando:
 
@@ -112,4 +112,4 @@ Autenticación y autorización: Los usuarios deberían autenticarse y tener perm
 #### Sistema básico para la gestión de pasajes aéreos, clientes, destinos y ventas.
 #### Parte del código fue desarrollado con asistencia de la herramienta ChatGPT (OpenAI),y adaptado por el equipo para cumplir con los objetivos del proyecto.
 #### Todos los derechos reservados bajo Ley 11.723 (Propiedad Intelectual - Argentina).
-# Prohibida su reproducción o distribución total o parcial sin autorización de los autores.
+#### Prohibida su reproducción o distribución total o parcial sin autorización de los autores.
