@@ -6,7 +6,7 @@ Está diseñado para interactuar con una base de datos MySQL y proporciona una i
 
 Además del presente archivo README, se van a encontrar con las carpetas:
 
-- Manu SkyRoute: Código python de gestión de ventas y clientes.
+- Menu SkyRoute: Código python de gestión de ventas y clientes.
 - ABP: Documentación, video y póster del mismo.
 - Base de datos: Esquema DER y código sql
 - Etica y deontologia: Documentación para orientar la práctica de desarrollo de software y base de datos en su marco ético y legal.
