@@ -13,8 +13,8 @@ o producir conocimiento a partir de esos datos van a pertenecer
 según lo establecido por el contrato de servicio bajo la egida de
 la ley de propiedad intelectual.
 
-El código y el uso de datos se fundamental en la 
-Ley 25.326 de Protección de daros personales.
-Toma do todas las medidas necesarias para prevenir los
+El código y el uso de datos es fundamental en la 
+Ley 25.326 de Protección de datos personales.
+Tomando todas las medidas necesarias para prevenir los
 delitos estipulados en la ley 26.388 que tipifica los 
 delitos en el ámbito digital.
