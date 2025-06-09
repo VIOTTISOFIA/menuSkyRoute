@@ -105,11 +105,11 @@ Autenticación y autorización: Los usuarios deberían autenticarse y tener perm
 - Póster del proyecto
 - 
 
-# SkyRoute - Sistema de Gestión de Pasajes
-# Desarrollado por: GRUPO 2 S.A.S.
-# Proyecto educativo - Tecnicatura Superior en Ciencias de Datos e Inteligencia Artificial
-# Módulo: Programador | Año: 2025
-# Sistema básico para la gestión de pasajes aéreos, clientes, destinos y ventas.
-# Parte del código fue desarrollado con asistencia de la herramienta ChatGPT (OpenAI),y adaptado por el equipo para cumplir con los objetivos del proyecto.
-# Todos los derechos reservados bajo Ley 11.723 (Propiedad Intelectual - Argentina).
+#### SkyRoute - Sistema de Gestión de Pasajes
+#### Desarrollado por: GRUPO 2 S.A.S.
+#### Proyecto educativo - Tecnicatura Superior en Ciencias de Datos e Inteligencia Artificial
+#### Módulo: Programador | Año: 2025
+#### Sistema básico para la gestión de pasajes aéreos, clientes, destinos y ventas.
+#### Parte del código fue desarrollado con asistencia de la herramienta ChatGPT (OpenAI),y adaptado por el equipo para cumplir con los objetivos del proyecto.
+#### Todos los derechos reservados bajo Ley 11.723 (Propiedad Intelectual - Argentina).
 # Prohibida su reproducción o distribución total o parcial sin autorización de los autores.
